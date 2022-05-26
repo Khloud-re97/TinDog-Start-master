@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Carousel</title>
+  <!-- bootstrap link must be before our css file -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Our CSS file -->
+  <link rel="stylesheet" href="css/Carousel-css.css">
+
+  <!-- Font awesome  -->
+  <script src="https://kit.fontawesome.com/5c66c2867e.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--  data-bs-interval="1000" لو بنغير الوقت حق تنقل الشرايح نستخدم خيار ال انترفال ووحدة قياسه بالميلي سكند -->
+  <!-- data-bs-ride="carousel" لو غيرنا هذي الخاصية بيصير السلايد ثابت ونقدر نضيف الازرار عشان نحركها  -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-inner">
+    <!-- active يعني انه هذا الدف بيكون اول سلايد يطلع للمستخدم -->
+    <div class="carousel-item active " style="background-color:red;">
+      <img src="..." class="d-block w-100" alt="First-image">
+    </div>
+    <div class="carousel-item" style="background-color:yellow;">
+      <img src="..." class="d-block w-100" alt="Second-image">
+    </div>
+    <div class="carousel-item" style="background-color:blue;">
+      <img src="..." class="d-block w-100" alt="Third-image">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+<!--  aria-hidden="true" خااصية متعلقة بقارئ الشاشة بحيث انه لو القارئ جالس يقرأموقعنا لأحد يسوي سكب للزر ما ينطقه للمستخدم يعني ما يقول زي أيمن زي أيسر وكذا  -->
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<!-- الكلمة اللي بيقولها قارئ الشاشة اذا وصل عند هذا الجزء -->
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</body>
+
+</html>

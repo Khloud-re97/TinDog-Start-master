@@ -1,0 +1,11 @@
+/*مايحقق اللي جوا الا في حالة انه بنطبع الكلام */
+/* @media print {
+    h1{
+        color: red;
+    }
+} */
+@media (min-width:900Px) and (max-width:1000px){
+  h1{
+      color: red;
+  }
+}
